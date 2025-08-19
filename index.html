@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal do Amor ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <strong>Terminal do Amor</strong>
+      </div>
+      <div class="actions">
+        <button id="themeBtn">Tema</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </header>
+
+    <main id="term">
+      <div class="line muted">Iniciando sistema...</div>
+      <div class="line">Carregando módulos: <span class="muted">romance.js</span>, <span class="muted">coragem.wasm</span>, <span class="muted">sorriso.ai</span></div>
+      <div class="line">Dica: digite <kbd>help</kbd> para ver os comandos.</div>
+    </main>
+
+    <form id="cmdForm" autocomplete="off" spellcheck="false">
+      <label for="cmd" class="prompt">$</label>
+      <input id="cmd" name="cmd" autofocus placeholder="digite um comando e pressione Enter">
+    </form>
+
+    <footer>
+      <small>Personalize por URL: <code>?nome=Ana&pergunta=Quer%20namorar%20comigo%3F</code></small>
+    </footer>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

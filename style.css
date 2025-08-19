@@ -1,0 +1,12 @@
+:root{--bg:#0b0f14;--fg:#e6edf3;--muted:#94a3b8;--accent:#ff5a91;--accent2:#68d391;--prompt:#88c0d0;}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Fira Code',monospace}
+.wrap{max-width:900px;margin:32px auto;padding:0 16px}
+header{display:flex;justify-content:space-between;background:#0d1117;padding:10px;border-radius:8px 8px 0 0}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.red{background:#ff5f56}.yellow{background:#ffbd2e}.green{background:#27c93f}
+main#term{background:#0d1117;min-height:300px;padding:16px;border-radius:0 0 8px 8px}
+.line{margin:6px 0}.muted{color:var(--muted)}
+form{display:flex;gap:8px;margin-top:12px}
+label.prompt{padding:8px;color:var(--prompt)}
+#cmd{flex:1;padding:10px;background:#0d1117;border:1px solid #1f2937;border-radius:8px;color:var(--fg)}
+.success{color:var(--accent2)}.error{color:#ff7b7b}.question{font-weight:bold}
